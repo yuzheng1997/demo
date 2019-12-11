@@ -8,7 +8,6 @@ public class demo1 {
         Integer [] arrays = {1, 2, 3};
         int len = arrays.length;
         Integer [] arrays1 = new Integer[len];
-        // 数组复制
         System.arraycopy(arrays,0,arrays1,0,len);
         // 数组遍历
         for(Integer i : arrays1) {

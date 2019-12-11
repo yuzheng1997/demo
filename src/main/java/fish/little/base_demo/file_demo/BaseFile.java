@@ -27,6 +27,8 @@ public class BaseFile {
         // 获取相对路径的位置
         System.out.println(System.getProperty("user.dir"));
         File file = new File("test.txt");
+        File f = new File("D:\\a\\b\\c");
+        System.out.println("parent:" + f.getParent());
         System.out.println("是否存在：" + file.exists());
         // 创建文件
          file.createNewFile();
