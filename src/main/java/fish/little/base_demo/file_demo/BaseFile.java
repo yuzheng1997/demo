@@ -31,7 +31,7 @@ public class BaseFile {
         System.out.println("parent:" + f.getParent());
         System.out.println("是否存在：" + file.exists());
         // 创建文件
-         file.createNewFile();
+        file.createNewFile();
         System.out.println("是否存在：" + file.exists());
         System.out.println("文件绝对路径:" + file.getAbsolutePath());
         System.out.println("文件路径：" + file.getPath());

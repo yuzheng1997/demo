@@ -13,7 +13,7 @@ public class CopyFile {
     public static void main(String[] args) {
         File file = new File("E:\\a");
         StringBuilder stringBuilder = new StringBuilder("D:/");
-        copyDirectory(file, stringBuilder);
+//        copyDirectory(file, stringBuilder);
     }
     public static void copyDirectory(File file, StringBuilder basePath) {
         // basePath = D:/
@@ -49,7 +49,9 @@ public class CopyFile {
             System.out.println("未知");
         }
     }
-    public static void getUrl(File file) {
-
+    public static String getUrl(File file, String root) {
+        String url = file.getAbsolutePath();
+        int index = url.indexOf(root);
+        return url.substring(index);
     }
 }
